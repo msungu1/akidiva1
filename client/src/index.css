@@ -1,0 +1,304 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* Akidiva custom colors */
+  --color-hospital-blue: var(--hospital-blue);
+  --color-hospital-blue-dark: var(--hospital-blue-dark);
+  --color-hospital-green: var(--hospital-green);
+  --color-hospital-amber: var(--hospital-amber);
+  --color-hospital-light: var(--hospital-light);
+}
+
+:root {
+  /* Akidiva Hospital Brand Colors */
+  --hospital-blue: oklch(0.38 0.12 240);       /* Deep cerulean #1A5276 */
+  --hospital-blue-dark: oklch(0.28 0.13 240);  /* Darker navy #0D3B5E */
+  --hospital-green: oklch(0.52 0.14 155);      /* Sage green #2E8B57 */
+  --hospital-amber: oklch(0.72 0.16 65);       /* Warm amber #F39C12 */
+  --hospital-light: oklch(0.98 0.005 95);      /* Warm off-white #FAFAF8 */
+
+  --primary: oklch(0.38 0.12 240);
+  --primary-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.38 0.12 240);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --chart-1: oklch(0.38 0.12 240);
+  --chart-2: oklch(0.52 0.14 155);
+  --chart-3: oklch(0.72 0.16 65);
+  --chart-4: oklch(0.28 0.13 240);
+  --chart-5: oklch(0.65 0.12 200);
+  --radius: 0.75rem;
+  --background: oklch(0.98 0.005 95);
+  --foreground: oklch(0.18 0.01 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.01 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.01 250);
+  --secondary: oklch(0.94 0.01 240);
+  --secondary-foreground: oklch(0.38 0.12 240);
+  --muted: oklch(0.95 0.005 95);
+  --muted-foreground: oklch(0.5 0.01 250);
+  --accent: oklch(0.94 0.02 155);
+  --accent-foreground: oklch(0.28 0.12 155);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.9 0.01 240);
+  --input: oklch(0.9 0.01 240);
+  --ring: oklch(0.38 0.12 240);
+  --sidebar: oklch(0.98 0.005 95);
+  --sidebar-foreground: oklch(0.18 0.01 250);
+  --sidebar-accent: oklch(0.94 0.01 240);
+  --sidebar-accent-foreground: oklch(0.38 0.12 240);
+  --sidebar-border: oklch(0.9 0.01 240);
+  --sidebar-ring: oklch(0.38 0.12 240);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Akidiva Hospital Custom Utilities */
+  .btn-primary {
+    @apply bg-[oklch(0.38_0.12_240)] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[oklch(0.28_0.13_240)] transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-[oklch(0.52_0.14_155)] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[oklch(0.42_0.14_155)] transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  .btn-amber {
+    @apply bg-[oklch(0.72_0.16_65)] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[oklch(0.62_0.16_65)] transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-[oklch(0.18_0.01_250)] leading-tight;
+    font-family: 'Merriweather', serif;
+  }
+
+  .section-subtitle {
+    @apply text-[oklch(0.38_0.12_240)] font-semibold text-sm uppercase tracking-widest mb-3;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .gradient-blue {
+    background: linear-gradient(135deg, oklch(0.28 0.13 240) 0%, oklch(0.38 0.12 240) 100%);
+  }
+
+  .gradient-green {
+    background: linear-gradient(135deg, oklch(0.42 0.14 155) 0%, oklch(0.52 0.14 155) 100%);
+  }
+
+  .text-hospital-blue {
+    color: oklch(0.38 0.12 240);
+  }
+
+  .text-hospital-green {
+    color: oklch(0.52 0.14 155);
+  }
+
+  .text-hospital-amber {
+    color: oklch(0.72 0.16 65);
+  }
+
+  .bg-hospital-blue {
+    background-color: oklch(0.38 0.12 240);
+  }
+
+  .bg-hospital-blue-dark {
+    background-color: oklch(0.28 0.13 240);
+  }
+
+  .bg-hospital-green {
+    background-color: oklch(0.52 0.14 155);
+  }
+
+  .bg-hospital-amber {
+    background-color: oklch(0.72 0.16 65);
+  }
+
+  .bg-hospital-light {
+    background-color: oklch(0.96 0.01 240);
+  }
+
+  /* Wave divider */
+  .wave-divider {
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave-divider svg {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.95 0.005 95);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.38 0.12 240);
+  border-radius: 3px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes countUp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Pulse ring for emergency */
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.pulse-ring::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: pulseRing 1.5s ease-out infinite;
+  border: 2px solid currentColor;
+}
+
+/* Image hover zoom */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
