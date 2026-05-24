@@ -10,19 +10,31 @@ import {
 
 const HERO_SLIDES = [
   {
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/hero-hospital-7fKfa7Nu48HuPfY5cvWJp5.webp",
+
+        image: "src/images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg",
+
     tagline: "Compassionate Care,",
     tagline2: "Modern Medicine",
     sub: "World-class healthcare serving Migori County and beyond. Your health, our mission.",
   },
   {
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/medical-team-iWwJpfcxuSmAydRTfC8Vnu.webp",
+    image: "src/images/fronthosi.jpg",
+    tagline: "Your Health,",
+    tagline1: "Our Priority,", // Added missing comma and standardized key name
+    tagline2: "Expert Care",
+    sub: "Combining compassionate medical professionals with advanced technology for a truly healing experience.",
+  },
+  {
+    // image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/medical-team-iWwJpfcxuSmAydRTfC8Vnu.webp",
+    image: "src/images/IMG_2229.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
+
     tagline: "Expert Doctors,",
     tagline2: "Dedicated to You",
     sub: "Over 50 specialist physicians and 200+ healthcare professionals ready to serve you.",
   },
+
   {
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/hospital-lobby-mStJQf2kcVxu5A4aTUo6SM.webp",
+    image: "src/images/hosi13.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
     tagline: "Modern Facilities,",
     tagline2: "Healing Environment",
     sub: "State-of-the-art equipment in a warm, welcoming space designed for your comfort.",
@@ -30,17 +42,53 @@ const HERO_SLIDES = [
 ];
 
 const SERVICES = [
-  { icon: Baby, title: "Maternity & Newborn", desc: "Comprehensive care from prenatal to postnatal, ensuring safe deliveries.", color: "text-pink-500", bg: "bg-pink-50" },
-  { icon: Zap, title: "Emergency Care", desc: "24/7 emergency services with rapid response teams always on standby.", color: "text-red-500", bg: "bg-red-50" },
-  { icon: Stethoscope, title: "Outpatient Services", desc: "Specialist consultations and general outpatient care without admission.", color: "text-blue-500", bg: "bg-blue-50" },
-  { icon: Microscope, title: "Diagnostic Services", desc: "Advanced laboratory, imaging, and pathology services for accurate diagnosis.", color: "text-purple-500", bg: "bg-purple-50" },
-  { icon: Activity, title: "Surgery", desc: "Minimally invasive and open surgical procedures by expert surgeons.", color: "text-orange-500", bg: "bg-orange-50" },
-  { icon: Shield, title: "Malaria Programs", desc: "Specialized malaria prevention, diagnosis, and treatment programs.", color: "text-green-600", bg: "bg-green-50" },
+  { 
+    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=800", 
+    title: "Maternity & Newborn", 
+    desc: "Comprehensive care from prenatal to postnatal, ensuring safe deliveries.", 
+    color: "text-pink-500", 
+    bg: "bg-pink-50" 
+  },
+  { 
+    image: "/src/images/6q1Fo.jpg", 
+    title: "Emergency Care", 
+    desc: "24/7 emergency services with rapid response teams always on standby.", 
+    color: "text-red-500", 
+    bg: "bg-red-50" 
+  },
+  { 
+    image: "/src/images/hosi13.jpg", 
+    title: "Outpatient Services", 
+    desc: "Specialist consultations and general outpatient care without admission.", 
+    color: "text-blue-500", 
+    bg: "bg-blue-50" 
+  },
+  { 
+    image: "/src/images/qypHS.jpg", 
+    title: "Diagnostic Services", 
+    desc: "Advanced laboratory, imaging, and pathology services for accurate diagnosis.", 
+    color: "text-purple-500", 
+    bg: "bg-purple-50" 
+  },
+  { 
+    image: "/src/images/WhatsApp Image 2026-05-02 at 22.03.42.jpeg", 
+    title: "Surgery", 
+    desc: "Minimally invasive and open surgical procedures by expert surgeons.", 
+    color: "text-orange-500", 
+    bg: "bg-orange-50" 
+  },
+  { 
+    image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=800", 
+    title: "Malaria Programs", 
+    desc: "Specialized malaria prevention, diagnosis, and treatment programs.", 
+    color: "text-green-600", 
+    bg: "bg-green-50" 
+  },
 ];
 
 const STATS = [
-  { value: 15, label: "Years of Service", icon: Award, suffix: "+" },
-  { value: 50, label: "Patients Served", icon: Users, suffix: "K+" },
+  { value: 20, label: "Years of Service", icon: Award, suffix: "+" },
+  { value: 100, label: "Patients Served", icon: Users, suffix: "K+" },
   { value: 50, label: "Specialist Doctors", icon: Stethoscope, suffix: "+" },
   { value: 24, label: "Emergency Care", icon: Heart, suffix: "/7" },
 ];
@@ -114,7 +162,7 @@ export default function Home() {
               <Link href="/contact">
                 <a className="bg-hospital-amber text-white font-bold px-8 py-4 rounded-xl hover:bg-yellow-500 transition-all shadow-lg">Book Appointment</a>
               </Link>
-              <a href="tel:+254700123456" className="bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/20 transition-all">Emergency: +254 700 123 456</a>
+              <a href="tel:+254722255732/0759696637" className="bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/20 transition-all">Emergency: 254722255732 / 0759696637</a>
             </div>
           </div>
         </div>
@@ -138,28 +186,38 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-gray-50">
-        <div className="container px-4 mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h3 className="text-hospital-blue font-bold text-sm uppercase tracking-widest mb-2">What We Offer</h3>
-            <h2 className="text-4xl font-bold text-gray-900" style={{ fontFamily: "Merriweather, serif" }}>Comprehensive Medical Services</h2>
+<section className="py-24 bg-gray-50">
+  <div className="container px-4 mx-auto">
+    <div className="text-center max-w-2xl mx-auto mb-16">
+      <h3 className="text-hospital-blue font-bold text-sm uppercase tracking-widest mb-2">What We Offer</h3>
+      <h2 className="text-4xl font-bold text-gray-900" style={{ fontFamily: "Merriweather, serif" }}>Comprehensive Medical Services</h2>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {SERVICES.map((service, idx) => (
+        <div key={idx} className="bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group overflow-hidden">
+          {/* IMAGE HEADER */}
+          <div className="h-48 w-full overflow-hidden">
+            <img 
+              src={service.image} 
+              alt={service.title} 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service, idx) => (
-              <div key={idx} className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
-                <div className={`w-14 h-14 ${service.bg} ${service.color} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform`}>
-                  <service.icon className="w-7 h-7" />
-                </div>
-                <h4 className="text-xl font-bold mb-4">{service.title}</h4>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.desc}</p>
-                <Link href="/services">
-                  <a className="text-hospital-blue font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">Learn More <ArrowRight className="w-4 h-4" /></a>
-                </Link>
-              </div>
-            ))}
+          
+          <div className="p-10">
+            <h4 className="text-xl font-bold mb-4">{service.title}</h4>
+            <p className="text-gray-600 mb-6 leading-relaxed">{service.desc}</p>
+            <Link href="/services">
+              <a className="text-hospital-blue font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </a>
+            </Link>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="py-20 bg-hospital-amber text-white text-center">

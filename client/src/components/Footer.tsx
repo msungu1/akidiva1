@@ -16,10 +16,10 @@ export default function Footer() {
             <span>24/7 Emergency Services Available</span>
           </div>
           <a
-            href="tel:+254700123456"
+            href="tel:+254 72227732"
             className="text-white font-bold text-lg hover:underline"
           >
-            +254 700 123 456
+            +254 759696637
           </a>
         </div>
       </div>
@@ -28,20 +28,31 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 40 40" className="w-7 h-7" fill="none">
-                  <rect x="16" y="4" width="8" height="32" rx="2" fill="white" />
-                  <rect x="4" y="16" width="32" height="8" rx="2" fill="white" />
-                </svg>
-              </div>
-              <div>
-                <span className="block text-xl font-bold text-white" style={{ fontFamily: "Merriweather, serif" }}>
-                  Akidiva
-                </span>
-                <span className="block text-xs text-white/60 tracking-widest uppercase">Hospital</span>
-              </div>
-            </div>
+           <div className="flex items-center gap-4 mb-6 group">
+  {/* Logo Container: Increased size and added a subtle border for visibility */}
+  <div className="w-33 h-33 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-sm border border-white/20 p-1">
+    <img 
+      src="src/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
+      alt="Akidiva Hospital Logo" 
+      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+    />
+  </div>
+
+  {/* Text Branding: Well-organized hierarchy */}
+  <div className="flex flex-col">
+    <span 
+      className="text-2xl font-bold text-white leading-tight tracking-tight" 
+      style={{ fontFamily: "Merriweather, serif" }}
+    >
+      Akidiva
+    </span>
+    <span className="text-[10px] text-hospital-amber font-black uppercase tracking-[0.2em] -mt-1">
+      Hospital
+    </span>
+  </div>
+</div>
+
+
             <p className="text-white/70 text-sm leading-relaxed mb-5">
               Providing compassionate, world-class healthcare to the people of Migori County and beyond. Your health is our mission.
             </p>
@@ -125,24 +136,24 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-hospital-amber shrink-0" />
                 <div className="text-sm">
-                  <a href="tel:+254700123456" className="text-white/70 hover:text-white transition-colors block">
-                    +254 700 123 456
+                  <a href="tel:+254 72227732" className="text-white/70 hover:text-white transition-colors block">
+                    +254 722255732
                   </a>
-                  <a href="tel:+254711234567" className="text-white/70 hover:text-white transition-colors block">
-                    +254 711 234 567
+                  <a href="tel:+254 72227732" className="text-white/70 hover:text-white transition-colors block">
+                    +254 722257732
                   </a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-hospital-amber shrink-0" />
                 <a href="mailto:info@akidivahospital.co.ke" className="text-white/70 hover:text-white text-sm transition-colors">
-                  info@akidivahospital.co.ke
+                  akidivahospital@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-hospital-amber mt-0.5 shrink-0" />
                 <div className="text-white/70 text-sm">
-                  <p>Mon – Sat: 8:00 AM – 8:00 PM</p>
+                  <p>Mon – Mon</p>
                   <p>Emergency: 24/7</p>
                 </div>
               </li>
@@ -167,18 +178,24 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
-        <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
-          <p className="flex items-center gap-1">
-            © 2026 Akidiva Hospital. Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> for our community.
-          </p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Sitemap</a>
-          </div>
-        </div>
-      </div>
+     <div className="border-t border-white/10">
+  <div className="container py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
+    <p className="flex items-center gap-1">
+      © 2026 Akidiva Hospital. Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> for our community.
+    </p>
+    
+    {/* Developer Credit */}
+    <div>
+      Created by <a href="tel:0713800378" className="hover:text-white transition-colors font-medium">Eng. Robert (0713800378)</a>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+      <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+      <a href="#" className="hover:text-white transition-colors">Sitemap</a>
+    </div>
+  </div>
+</div>
     </footer>
   );
 }

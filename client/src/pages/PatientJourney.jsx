@@ -66,13 +66,44 @@ const JOURNEY_STEPS = [
 ];
 
 const PATIENT_RIGHTS = [
-  "Right to respectful, dignified care regardless of background",
-  "Right to be fully informed about your diagnosis and treatment options",
-  "Right to privacy and confidentiality of your medical information",
-  "Right to refuse treatment after being fully informed",
-  "Right to access your medical records",
-  "Right to a second opinion",
+  {
+    title: "Client/Patient Rights",
+    content: [
+      "Right to access health care",
+      "Right to receive emergency treatment in any health facility",
+      "Right to be informed about all the provision of one’s Medical Scheme / Health Insurance Policy",
+      "Right to choose health care provider",
+      "Right to the highest attainable quality of health care product services",
+      "Right to refuse treatment",
+      "Right to confidentiality",
+      "Right to informed consent to treatment",
+      "Right to information",
+      "Right to be treated with dignity and respect",
+      "Right to a second medical opinion",
+      "Right to complain",
+      "Right to insurance coverage without discrimination on the basis of age, pregnancy, disability, illness including mental health disorders"
+    ]
+  },
+  {
+    title: "Client Responsibilities",
+    content: [
+      "Takes care of his/her health by adopting a healthy lifestyle",
+      "Adopts a positive attitude towards their health and life",
+      "Protects the environment",
+      "Respects the rights of others and not to endanger their life and health",
+      "Give health care providers relevant, accurate information to facilitate diagnosis and treatment",
+      "Takes care of the health records in his/her possession and produce them when required",
+      "Follow instruction, adheres to and does not abuse or misuse prescribed medication",
+      "Enquires about cost of treatment and makes appropriate arrangements for payments",
+      "Be aware of the available health care services in his/her locality",
+      "Inform the healthcare provider regarding organ donation or wishes upon ones demise",
+      "Accords protection and care to the patient if the client is not competent to make decisions",
+      "Seek treatment at the earliest opportunity",
+      "Express any concerns through the right channels confidently"
+    ]
+  }
 ];
+
 
 export default function PatientJourney() {
   return (
@@ -151,7 +182,7 @@ export default function PatientJourney() {
       </section>
 
       {/* Patient Rights & Checklist */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      {/* <section className="py-24 bg-white border-t border-gray-100">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -195,7 +226,71 @@ export default function PatientJourney() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <section className="py-24 bg-white border-t border-gray-100">
+  <div className="container px-4 mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div className="space-y-12">
+        <div>
+          <h3 className="text-hospital-blue font-bold text-sm uppercase mb-2">Your Rights & Roles</h3>
+          <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: "Merriweather, serif" }}>Patient Rights & Responsibilities</h2>
+          <p className="text-gray-600 mb-8 leading-relaxed">
+            At Akidiva Hospital, we believe every patient deserves to be treated with dignity, respect, and transparency. These guidelines ensure a collaborative environment for your healing.
+          </p>
+        </div>
+
+        {/* This is the fixed nested mapping */}
+        {PATIENT_RIGHTS.map((section, idx) => (
+          <div key={idx} className="space-y-4">
+            <h4 className="text-lg font-bold text-gray-900 flex items-center gap-3">
+              <span className="w-8 h-1 bg-hospital-amber rounded-full" />
+              {section.title}
+            </h4>
+            <div className="space-y-3">
+              {section.content.map((item, itemIdx) => (
+                <div 
+                  key={itemIdx} 
+                  className="flex gap-4 p-4 rounded-xl bg-gray-50 hover:bg-blue-50 transition-all border border-transparent hover:border-blue-100 group"
+                >
+                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+                    <Star className="w-3 h-3 text-hospital-blue" />
+                  </div>
+                  <span className="text-sm font-medium text-gray-700 leading-snug">
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* The "What to Bring" Card remains the same, but I added 'lg:sticky' to keep it visible while scrolling the long list */}
+      <div className="lg:sticky lg:top-24 bg-hospital-blue-dark rounded-3xl p-10 text-white shadow-2xl">
+        <h3 className="text-hospital-amber font-bold text-sm uppercase mb-6 tracking-widest">What to Bring</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {[
+            { label: "National ID or Passport", icon: "🪪" },
+            { label: "Insurance card", icon: "💳" },
+            { label: "Medical records", icon: "📋" },
+            { label: "Current medications", icon: "💊" },
+            { label: "Emergency contacts", icon: "📞" },
+            { label: "Referral letter", icon: "📄" },
+          ].map(({ label, icon }, idx) => (
+            <div key={idx} className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
+              <span className="text-2xl">{icon}</span>
+              <span className="text-sm font-semibold text-white/90">{label}</span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-10 text-xs text-white/50 italic border-t border-white/10 pt-6">
+          Please arrive at least 15 minutes before your scheduled appointment to complete the registration process.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-20 text-center bg-hospital-blue-dark text-white border-t border-white/5">

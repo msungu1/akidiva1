@@ -1,15 +1,16 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
+import lobbyImage from "../images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg";
 import { Heart, Shield, Users, Award, ArrowRight, Star, CheckCircle } from "lucide-react";
 
 const TEAM = [
-  { name: "Dr. Samuel Odhiambo", role: "Medical Director & Chief Surgeon", specialty: "General Surgery", initials: "SO", color: "bg-blue-600" },
-  { name: "Dr. Amina Wanjiku", role: "Head of Maternity", specialty: "Obstetrics & Gynecology", initials: "AW", color: "bg-pink-500" },
-  { name: "Dr. Peter Otieno", role: "Chief Physician", specialty: "Internal Medicine", initials: "PO", color: "bg-green-600" },
-  { name: "Dr. Faith Mwangi", role: "Head of Pediatrics", specialty: "Pediatrics", initials: "FM", color: "bg-purple-500" },
-  { name: "Dr. Hassan Abdi", role: "Lead Diagnostician", specialty: "Radiology & Imaging", initials: "HA", color: "bg-orange-500" },
-  { name: "Nurse Esther Auma", role: "Chief Nursing Officer", specialty: "Critical Care Nursing", initials: "EA", color: "bg-teal-500" },
+  { name: "Dr. Aggrey Akidiva", role: "Medical Director & Chief Surgeon", specialty: "General Surgery", initials: "SO", color: "bg-blue-600",    image: "/src/images/IMG_2229.jpg", },
+  { name: "Nurse Neddy Idagiza", role: "Deputy Director & matron", specialty: "Nurse", initials: "AW", color: "bg-pink-500" ,    image: "/src/images/hosi21.jpg",},
+  { name: "Dr. Paul ", role: "Surgeon", initials: "PO", color: "bg-green-600" ,    image: "/src/images/poul.png",},
+  { name: "Caroline Lumasia", role: "Head of ICT", initials: "FM", color: "bg-purple-500" ,    image: "/src/images/caro.png",},
+  { name: "Dr. Linda Kadenyeka ", role: "Lead Surgeon", initials: "HA", color: "bg-orange-500" ,    image:"/src/images/linda.png" ,},
+  { name: "Jackline Kavetza", role: "Head of MCH Department", specialty: "Maternal & Child Health Services", initials: "EA", color: "bg-teal-500" ,    image: "/src/images/hosi18.jpg",},
 ];
 
 const VALUES = [
@@ -20,13 +21,44 @@ const VALUES = [
 ];
 
 const MILESTONES = [
-  { year: "2010", event: "Akidiva Hospital founded with 20 beds and a vision to serve Migori County." },
-  { year: "2013", event: "Expanded to 80 beds; launched maternity ward and pediatric unit." },
-  { year: "2016", event: "Opened state-of-the-art diagnostic center with digital imaging." },
-  { year: "2019", event: "Received ISO 9001 accreditation for quality management systems." },
-  { year: "2022", event: "Launched community malaria prevention program reaching 10,000+ residents." },
-  { year: "2025", event: "Opened new Neonatal ICU and expanded surgical theater capacity." },
+  { 
+    year: "2000", 
+    event: "Akidiva Hospital began its journey as a dedicated community clinic focused on family health." 
+  },
+  { 
+    year: "2006", 
+    event: "Expanded to include a specialized maternity wing to support safe deliveries in the region." 
+  },
+  { 
+    year: "2010", 
+    event: "Officially expanded to 20 beds with a focused vision to serve the wider Migori County." 
+  },
+  { 
+    year: "2013", 
+    event: "Grew to 80 beds and launched a fully equipped pediatric unit alongside the maternity ward." 
+  },
+  { 
+    year: "2016", 
+    event: "Opened a state-of-the-art diagnostic center with digital imaging and advanced laboratory services." 
+  },
+  { 
+    year: "2019", 
+    event: "Received ISO 9001 accreditation for excellence in healthcare quality management systems." 
+  },
+  { 
+    year: "2022", 
+    event: "Launched a specialized community malaria prevention program reaching over 10,000 residents." 
+  },
+  { 
+    year: "2025", 
+    event: "Opened the new Neonatal ICU and expanded surgical theater capacity to meet growing demand." 
+  },
+  { 
+    year: "2026", 
+    event: "Achieved full digitalization with production-ready hospital management and record systems." 
+  }
 ];
+
 
 export default function About() {
   return (
@@ -47,7 +79,7 @@ export default function About() {
             About Akidiva Hospital
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-white/70 leading-relaxed">
-            Fifteen years of compassionate service, modern medicine, and community dedication in the heart of Migori County.
+            25 years of compassionate service, modern medicine, and community dedication in the heart of Migori County.
           </p>
         </div>
       </section>
@@ -66,8 +98,7 @@ export default function About() {
                     <div>
                       <h4 className="text-xl font-bold text-hospital-blue mb-2">Our Mission</h4>
                       <p className="text-gray-700 leading-relaxed">
-                        To provide accessible, compassionate, and world-class healthcare services to every individual in Migori County and the surrounding region, regardless of their background or circumstances.
-                      </p>
+To offer Comprehensive services where innovation and teaching are intergral to care                       </p>
                     </div>
                   </div>
                   
@@ -75,8 +106,7 @@ export default function About() {
                     <div>
                       <h4 className="text-xl font-bold text-hospital-green mb-2">Our Vision</h4>
                       <p className="text-gray-700 leading-relaxed">
-                        To be the leading healthcare institution in Western Kenya, recognized for clinical excellence, innovative medical practices, and an unwavering commitment to community health.
-                      </p>
+              To be the regional destination provider of innovative and complex care                       </p>
                     </div>
                   </div>
                 </div>
@@ -86,7 +116,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-4 bg-hospital-amber/10 rounded-3xl -rotate-2"></div>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/hospital-lobby-mStJQf2kcVxu5A4aTUo6SM.webp"
+                src={lobbyImage}
                 alt="Hospital lobby"
                 className="relative w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
@@ -160,9 +190,13 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {TEAM.map((member, idx) => (
               <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 text-center p-8">
-                <div className={`w-24 h-24 ${member.color} rounded-2xl flex items-center justify-center mx-auto mb-6 text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform`}>
-                  {member.initials}
-                </div>
+             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-gray-100 group-hover:scale-110 transition-transform duration-300">
+  <img
+    src={member.image}
+    alt={member.name}
+    className="w-full h-full object-cover"
+  />
+</div>
                 <h4 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h4>
                 <p className="text-hospital-blue font-semibold text-sm mb-2">{member.role}</p>
                 <p className="text-gray-500 text-sm italic mb-4">{member.specialty}</p>

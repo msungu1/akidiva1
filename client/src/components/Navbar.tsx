@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
               <Phone className="w-3 h-3" />
-              Emergency: +254 700 123 456
+              Emergency: +254 0722255732
             </span>
             <span>Mon–Sat: 8:00 AM – 8:00 PM | Emergency: 24/7</span>
           </div>
@@ -76,12 +76,13 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-hospital-blue rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <svg viewBox="0 0 40 40" className="w-7 h-7 md:w-8 md:h-8" fill="none">
-                  <rect x="16" y="4" width="8" height="32" rx="2" fill="white" />
-                  <rect x="4" y="16" width="32" height="8" rx="2" fill="white" />
-                </svg>
-              </div>
+              <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-sm border border-white/20 p-1">
+    <img 
+      src="src/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
+      alt="Akidiva Hospital Logo" 
+      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+    />
+  </div>
               <div>
                 <span
                   className="block text-lg md:text-xl font-bold text-hospital-blue leading-tight"

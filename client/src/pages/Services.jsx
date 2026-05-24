@@ -25,7 +25,7 @@ const SERVICES_DETAILED = [
     color: "text-orange-500",
     bg: "bg-orange-50",
     border: "border-orange-200",
-    image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80",
+    image: "/src/images/Gemini_Generated_Image_1l91sf1l91sf1l91.png", 
     description: "Our surgical team performs a wide range of procedures using the latest minimally invasive techniques. Our modern operating theaters are equipped with cutting-edge technology for optimal outcomes.",
     features: ["Laparoscopic (keyhole) surgery", "General abdominal surgery", "Orthopedic procedures", "Gynecological surgery", "Emergency surgical care", "Pre & post-operative support"],
   },
