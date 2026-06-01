@@ -78,7 +78,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-sm border border-white/20 p-1">
     <img 
-      src="src/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
+      src="/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
       alt="Akidiva Hospital Logo" 
       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
     />

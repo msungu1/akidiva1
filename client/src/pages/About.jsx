@@ -5,12 +5,12 @@ import lobbyImage from "../images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg
 import { Heart, Shield, Users, Award, ArrowRight, Star, CheckCircle } from "lucide-react";
 
 const TEAM = [
-  { name: "Dr. Aggrey Akidiva", role: "Medical Director & Chief Surgeon", specialty: "General Surgery", initials: "SO", color: "bg-blue-600",    image: "/src/images/IMG_2229.jpg", },
-  { name: "Nurse Neddy Idagiza", role: "Deputy Director & matron", specialty: "Nurse", initials: "AW", color: "bg-pink-500" ,    image: "/src/images/hosi21.jpg",},
-  { name: "Dr. Paul ", role: "Surgeon", initials: "PO", color: "bg-green-600" ,    image: "/src/images/poul.png",},
-  { name: "Caroline Lumasia", role: "Head of ICT", initials: "FM", color: "bg-purple-500" ,    image: "/src/images/caro.png",},
-  { name: "Dr. Linda Kadenyeka ", role: "Lead Surgeon", initials: "HA", color: "bg-orange-500" ,    image:"/src/images/linda.png" ,},
-  { name: "Jackline Kavetza", role: "Head of MCH Department", specialty: "Maternal & Child Health Services", initials: "EA", color: "bg-teal-500" ,    image: "/src/images/hosi18.jpg",},
+  { name: "Dr. Aggrey Akidiva", role: "Medical Director & Chief Surgeon", specialty: "General Surgery", initials: "SO", color: "bg-blue-600",    image: "/images/IMG_2229.jpg", },
+  { name: "Nurse Neddy Idagiza", role: "Deputy Director & matron", specialty: "Nurse", initials: "AW", color: "bg-pink-500" ,    image: "/images/hosi21.jpg",},
+  { name: "Dr. Paul ", role: "Surgeon", initials: "PO", color: "bg-green-600" ,    image: "/images/poul.png",},
+  { name: "Caroline Lumasia", role: "Head of ICT", initials: "FM", color: "bg-purple-500" ,    image: "/images/caro.png",},
+  { name: "Dr. Linda Kadenyeka ", role: "Lead Surgeon", initials: "HA", color: "bg-orange-500" ,    image:"/images/linda.png" ,},
+  { name: "Jackline Kavetza", role: "Head of MCH Department", specialty: "Maternal & Child Health Services", initials: "EA", color: "bg-teal-500" ,    image: "/images/hosi18.jpg",},
 ];
 
 const VALUES = [

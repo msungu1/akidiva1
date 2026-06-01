@@ -11,14 +11,14 @@ import {
 const HERO_SLIDES = [
   {
 
-        image: "src/images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg",
+        image: "/images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg",
 
     tagline: "Compassionate Care,",
     tagline2: "Modern Medicine",
     sub: "World-class healthcare serving Migori County and beyond. Your health, our mission.",
   },
   {
-    image: "src/images/fronthosi.jpg",
+    image: "/images/fronthosi.jpg",
     tagline: "Your Health,",
     tagline1: "Our Priority,", // Added missing comma and standardized key name
     tagline2: "Expert Care",
@@ -26,7 +26,7 @@ const HERO_SLIDES = [
   },
   {
     // image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/medical-team-iWwJpfcxuSmAydRTfC8Vnu.webp",
-    image: "src/images/IMG_2229.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
+    image: "/images/IMG_2229.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
 
     tagline: "Expert Doctors,",
     tagline2: "Dedicated to You",
@@ -34,7 +34,7 @@ const HERO_SLIDES = [
   },
 
   {
-    image: "src/images/hosi13.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
+    image: "/images/hosi13.jpg",           // ← Your first image from assets    tagline: "Compassionate Care,",
     tagline: "Modern Facilities,",
     tagline2: "Healing Environment",
     sub: "State-of-the-art equipment in a warm, welcoming space designed for your comfort.",
@@ -50,28 +50,28 @@ const SERVICES = [
     bg: "bg-pink-50" 
   },
   { 
-    image: "/src/images/6q1Fo.jpg", 
+    image: "/images/6q1Fo.jpg", 
     title: "Emergency Care", 
     desc: "24/7 emergency services with rapid response teams always on standby.", 
     color: "text-red-500", 
     bg: "bg-red-50" 
   },
   { 
-    image: "/src/images/hosi13.jpg", 
+    image: "/images/hosi13.jpg", 
     title: "Outpatient Services", 
     desc: "Specialist consultations and general outpatient care without admission.", 
     color: "text-blue-500", 
     bg: "bg-blue-50" 
   },
   { 
-    image: "/src/images/qypHS.jpg", 
+    image: "/images/qypHS.jpg", 
     title: "Diagnostic Services", 
     desc: "Advanced laboratory, imaging, and pathology services for accurate diagnosis.", 
     color: "text-purple-500", 
     bg: "bg-purple-50" 
   },
   { 
-    image: "/src/images/WhatsApp Image 2026-05-02 at 22.03.42.jpeg", 
+    image: "/images/WhatsApp Image 2026-05-02 at 22.03.42.jpeg", 
     title: "Surgery", 
     desc: "Minimally invasive and open surgical procedures by expert surgeons.", 
     color: "text-orange-500", 

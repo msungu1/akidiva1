@@ -32,7 +32,7 @@ export default function Footer() {
   {/* Logo Container: Increased size and added a subtle border for visibility */}
   <div className="w-33 h-33 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-sm border border-white/20 p-1">
     <img 
-      src="src/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
+      src="/images/WhatsApp Image 2026-05-02 at 22.03.48 (1).jpeg" 
       alt="Akidiva Hospital Logo" 
       className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
     />
