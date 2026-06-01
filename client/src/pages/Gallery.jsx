@@ -3,20 +3,65 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { X, ArrowRight, Award, Users, Heart, Stethoscope } from "lucide-react";
+// src/pages/Gallery.jsx
 
-const CATEGORIES = ["All", "Facilities", "Medical Team", "Maternity", "Community", "Events"];
+// Import local images from public/images folder
+import image1 from "/images/IMG_2162.jpg";
+import image2 from "/images/IMG_2166.jpg";
+import image3 from "/images/IMG_2172.jpg";
+import image4 from "/images/IMG_2198.jpg";
+import image5 from "/images/IMG_2202.jpg";
+import image6 from "/images/IMG_2202-1.jpg";
+import image7 from "/images/IMG_2205.jpg";
+import image8 from "/images/IMG_2210.jpg";
+import image9 from "/images/IMG_2211.jpg";
+import image10 from "/images/IMG_2215.jpg";
+import image11 from "/images/IMG_2220.jpg";
+import image12 from "/images/IMG_2225.jpg";
+import image13 from "/images/IMG_2231.jpg";
+import image14 from "/images/IMG_2236.jpg";
+import image15 from "/images/IMG_2244.jpg";
+import image16 from "/images/IMG_2249.jpg";
+import image17 from "/images/IMG_2263.jpg";
+import image18 from "/images/IMG_2271.jpg";
+import image19 from "/images/IMG_2280.jpg";
+import image20 from "/images/linda.png";
+import image21 from "/images/poul.png";
+import image22 from "/images/qypHS.jpg";
+
+// WhatsApp images (if you want to use them)
+import wa1 from "/images/WhatsApp Image 2026-05-02 at 22.03.38.jpeg";
+import wa2 from "/images/WhatsApp Image 2026-05-02 at 22.03.42.jpeg";
+import wa3 from "/images/WhatsApp Image 2026-05-02 at 22.03.44.jpeg";
+import wa4 from "/images/WhatsApp Image 2026-05-02 at 22.03.46.jpeg";
+import wa5 from "/images/WhatsApp Image 2026-05-02 at 22.03.47 (1).jpeg";
+
 
 const GALLERY_ITEMS = [
-  { id: 1, category: "Facilities", title: "Hospital Entrance", src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/hero-hospital-7fKfa7Nu48HuPfY5cvWJp5.webp", span: "md:col-span-2 md:row-span-2 h-full" },
-  { id: 2, category: "Medical Team", title: "Our Dedicated Team", src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/medical-team-iWwJpfcxuSmAydRTfC8Vnu.webp", span: "" },
-  { id: 3, category: "Maternity", title: "Maternity Ward", src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/maternity-ward-B4fL3fNuFAh3zHDshhPW3Z.webp", span: "" },
-  { id: 4, category: "Facilities", title: "Reception & Lobby", src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/hospital-lobby-mStJQf2kcVxu5A4aTUo6SM.webp", span: "" },
-  { id: 5, category: "Medical Team", title: "Doctor Consultation", src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663493943798/UvtydikxNZ7R3P6SnXjuKR/doctor-patient-HhGPTE6kKssSvFowkNxqtE.webp", span: "" },
-  { id: 6, category: "Community", title: "Community Outreach", src: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=80", span: "" },
-  { id: 7, category: "Events", title: "Health Awareness Camp", src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80", span: "" },
-  { id: 8, category: "Facilities", title: "Diagnostic Center", src: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80", span: "" },
-  { id: 12, category: "Maternity", title: "Newborn Care", src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80", span: "md:col-span-2 h-64" },
+  { id: 1,  src: image1, span: "md:col-span-2 md:row-span-2" },
+  { id: 2,   src: image2, span: "" },
+  { id: 3,  src: image3, span: "" },
+  { id: 4,   src: image4, span: "" },
+  { id: 5,   src: image5, span: "" },
+  { id: 6,   src: image6, span: "" },
+  { id: 7,  src: image7, span: "" },
+  { id: 8,   src: image8, span: "" },
+  { id: 9,   src: image9, span: "" },
+  { id: 10,  src: image10, span: "md:col-span-2" },
+  { id: 11,  src: image11, span: "" },
+  { id: 12,   src: image12, span: "" },
+  { id: 13,   src: image13, span: "" },
+  { id: 14,  src: image14, span: "" },
+  { id: 15,   src: image15, span: "" },
+  { id: 16,   src: wa1, span: "" },
+  { id: 17,   src: wa2, span: "" },
 ];
+
+
+
+const CATEGORIES = ["All"];
+
+
 
 const QUICK_FACTS = [
   { icon: Award, value: "15+", label: "Years of Excellence", color: "text-yellow-500", bg: "bg-yellow-50" },
