@@ -41,6 +41,14 @@ const PROGRAMS = [
     stats: "95% coverage in target areas",
   },
   {
+  icon: Activity,
+  title: "Nutrition & Chronic Disease Management",
+  desc: "Our hospital nutritionists help patients manage Diabetes, Hypertension, Arthritis, and obesity through personalized diet plans. We emphasize locally available healthy foods and fruit-based nutrition to support long-term wellness.",
+  color: "text-emerald-600",
+  bg: "bg-emerald-50",
+  stats: "Personalized diet plans available",
+},
+  {
     icon: Users,
     title: "School Health Program",
     desc: "Our medical teams visit schools across Migori County to conduct health screenings, provide deworming treatment, and educate students about hygiene.",
@@ -181,6 +189,139 @@ export default function Education() {
         </div>
       </section>
 
+{/* Nutrition: Fruits & Kenyan Vegetables */}
+<section className="py-24 bg-gradient-to-b from-emerald-50 via-white to-blue-50">
+  <div className="container px-4 mx-auto">
+
+    {/* Header */}
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h3 className="text-emerald-700 font-bold text-sm uppercase tracking-wider">
+        Kenyan Nutrition & Chronic Care
+      </h3>
+
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3">
+        Eat Local. Stay Healthy. Live Longer.
+      </h2>
+
+      <p className="text-gray-600 mt-5 leading-relaxed">
+        We promote locally available Kenyan fruits and vegetables to help manage 
+        <span className="font-semibold text-gray-900"> Diabetes, Hypertension, Arthritis </span>
+        and improve overall wellness.
+      </p>
+    </div>
+
+    {/* FRUITS */}
+    <h3 className="text-xl font-bold text-gray-900 mb-6">🍎 Fruits for Healing</h3>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+
+      {[
+        {
+          name: "Avocado",
+          img: "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?w=600&q=80",
+          benefit: "Heart health & good cholesterol"
+        },
+        {
+          name: "Banana",
+          img: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600&q=80",
+          benefit: "Controls blood pressure"
+        },
+        {
+          name: "Orange",
+          img: "https://images.unsplash.com/photo-1547514701-42782101795e?w=600&q=80",
+          benefit: "Boosts immunity"
+        },
+        {
+          name: "Mango",
+          img: "https://images.unsplash.com/photo-1553279768-865429fa0078?w=600&q=80",
+          benefit: "Natural antioxidants"
+        },
+        {
+          name: "Pineapple",
+          img: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&q=80",
+          benefit: "Reduces inflammation"
+        },
+        {
+          name: "Papaya",
+          img: "https://images.unsplash.com/photo-1617112848923-cc2234396a1d?w=600&q=80",
+          benefit: "Improves digestion"
+        },
+      ].map((item, i) => (
+        <div key={i} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img src={item.img} className="h-36 w-full object-cover" />
+          <div className="p-4">
+            <h4 className="font-bold">{item.name}</h4>
+            <p className="text-xs text-gray-600">{item.benefit}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* VEGETABLES */}
+    <h3 className="text-xl font-bold text-gray-900 mb-6">🥬 Kenyan Vegetables for Chronic Disease Control</h3>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+
+      {[
+        {
+          name: "Sukuma Wiki",
+          img: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&q=80",
+          benefit: "Rich in calcium for bones & blood pressure control"
+        },
+        {
+          name: "Spinach (Mchicha)",
+          img: "https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=600&q=80",
+          benefit: "Iron-rich for blood health"
+        },
+        {
+          name: "Managu (African Nightshade)",
+          img: "https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=600&q=80",
+          benefit: "Boosts immunity & digestion"
+        },
+        {
+          name: "Terere (Amaranth Leaves)",
+          img: "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=600&q=80",
+          benefit: "Supports diabetes control"
+        },
+        {
+          name: "Cabbage",
+          img: "https://images.unsplash.com/photo-1594282486552-05a2f8c2a6f1?w=600&q=80",
+          benefit: "Low calorie, heart-friendly"
+        },
+        {
+          name: "Kale (Collards)",
+          img: "https://images.unsplash.com/photo-1604909052743-94e838986d24?w=600&q=80",
+          benefit: "Supports detox & weight control"
+        },
+      ].map((veg, i) => (
+        <div key={i} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img src={veg.img} className="h-36 w-full object-cover" />
+          <div className="p-4">
+            <h4 className="font-bold">{veg.name}</h4>
+            <p className="text-xs text-gray-600">{veg.benefit}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* MEDICAL MESSAGE */}
+    <div className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-3xl p-10 text-center">
+      <h3 className="text-2xl font-bold mb-3">
+        Chronic Disease Nutrition Support
+      </h3>
+
+      <p className="text-white/90 max-w-3xl mx-auto">
+        At Akidiva Hospital, our nutritionists design meal plans using everyday Kenyan foods
+        to help patients manage diabetes, hypertension, arthritis, obesity, and heart disease naturally.
+      </p>
+
+      <div className="mt-6 text-sm font-semibold">
+        🥗 Food First. Medicine When Needed. Prevention Always.
+      </div>
+    </div>
+
+  </div>
+</section>
       {/* Health Tips Section */}
       <section className="py-20 bg-gray-50">
         <div className="container px-4 mx-auto text-center">
