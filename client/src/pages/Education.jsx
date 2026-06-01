@@ -243,8 +243,7 @@ export default function Education() {
         },
         {
           name: "Papaya",
-          img: "https://images.unsplash.com/photo-1617112848923-cc2234396a1d?w=600&q=80",
-          benefit: "Improves digestion"
+img: "https://images.unsplash.com/photo-1617112848923-cc2234396a1d?w=800&q=80",          benefit: "Improves digestion"
         },
       ].map((item, i) => (
         <div key={i} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
@@ -280,14 +279,12 @@ export default function Education() {
         },
         {
           name: "Terere (Amaranth Leaves)",
-          img: "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=600&q=80",
+img: "https://images.unsplash.com/photo-1615484477881-9d7a4c8d5c25?w=800&q=80",
           benefit: "Supports diabetes control"
         },
         {
           name: "Cabbage",
-          img: "https://images.unsplash.com/photo-1594282486552-05a2f8c2a6f1?w=600&q=80",
-          benefit: "Low calorie, heart-friendly"
-        },
+img: "https://images.unsplash.com/photo-1594282486552-05a2f8c2a6f1?w=800&q=80",        },
         {
           name: "Kale (Collards)",
           img: "https://images.unsplash.com/photo-1604909052743-94e838986d24?w=600&q=80",
