@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
-import lobbyImage from "../images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg";
 import { Heart, Shield, Users, Award, ArrowRight, Star, CheckCircle } from "lucide-react";
 
 const TEAM = [
@@ -9,7 +8,7 @@ const TEAM = [
   { name: "Nurse Neddy Idagiza", role: "Deputy Director & matron", specialty: "Nurse", initials: "AW", color: "bg-pink-500" ,    image: "/images/hosi21.jpg",},
   { name: "Dr. Paul ", role: "Surgeon", initials: "PO", color: "bg-green-600" ,    image: "/images/poul.png",},
   { name: "Caroline Lumasia", role: "Head of ICT", initials: "FM", color: "bg-purple-500" ,    image: "/images/caro.png",},
-  { name: "Dr. Linda Kadenyeka ", role: "Lead Surgeon", initials: "HA", color: "bg-orange-500" ,    image:"/images/linda.png" ,},
+  { name: "Dr. Linda Kadenyeka ", role: "Lead Surgeon", initials: "HA", color: "bg-orange-500" ,    image: "/images/linda.png" ,},
   { name: "Jackline Kavetza", role: "Head of MCH Department", specialty: "Maternal & Child Health Services", initials: "EA", color: "bg-teal-500" ,    image: "/images/hosi18.jpg",},
 ];
 
@@ -116,7 +115,7 @@ To offer Comprehensive services where innovation and teaching are intergral to c
             <div className="relative">
               <div className="absolute -inset-4 bg-hospital-amber/10 rounded-3xl -rotate-2"></div>
               <img
-                src={lobbyImage}
+                 src="/images/WhatsApp Image 2026-05-02 at 22.03.49 (1).jpeg"
                 alt="Hospital lobby"
                 className="relative w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />
@@ -181,7 +180,7 @@ To offer Comprehensive services where innovation and teaching are intergral to c
         <div className="container px-4 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-hospital-blue font-bold text-sm uppercase tracking-wider">The People Behind Our Care</h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Meet Our Medical Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Meet Our  Team</h2>
             <p className="text-gray-600 mt-4 leading-relaxed">
               Our dedicated team of specialists, nurses, and support staff are the heart of Akidiva Hospital. Each member brings expertise, passion, and a genuine commitment to patient wellbeing.
             </p>
